@@ -1,0 +1,44 @@
+<html>
+        <body><html>
+    <head>
+        <title>Guess the Number Game</title>
+    </head>
+    <body>
+        <h3>Guess the Number Game</h3>
+        <br>
+        <h1>Guess a number between 1 and 10:</h1>
+        <br>
+        <input type="text" id="userGuess">
+        <button onclick="guessNumber()">Submit Guess</button>
+        <p id="result"></p>
+    </body>
+</html>
+</body>
+        <style>body{
+    background-image: url(https://tse3.mm.bing.net/th/id/OIP.fZ7E-XURwPGn-TAaA94BPQHaE8?pid=Api&P=0&h=180);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+h3{
+    background-color: blue;
+    color:white;
+}</style>
+        <script>var secretNumber = Math.floor(Math.random() *10) + 1;
+function  guessNumber(){
+    var userGuess = document.getElementById("userGuess").value;
+    var guess = +userGuess;
+    if (!isNaN(guess)) {
+        if (guess === secretNumber){
+            document.getElementById("result").innerHTML="congratulation! you guessed the correct number!";
+        } else if (guess < secretNumber){
+            document.getElementById("result").innerHTML = "Low.Try again";
+        } else {
+            document.getElementById("result").innerHTML = "High.Try again";        
+        }
+    } else {
+        document.getElementById("result").innerHTML = "invalid input. please enter a valid number.";
+    }
+
+}</script>
+      </html>
