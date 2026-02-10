@@ -1,0 +1,37 @@
+<html>
+        <body><html>
+    <head>
+        <title>Story-Telling Intern Activity</title>
+    </head>
+    <body>
+        <h1>Story-Telling Intern Activity</h1>
+        <img src="" id="image" >
+        <br>
+        <button  onClick="imageClicker()">Display Image</button>
+    </body>
+</html>
+</body>
+        <style>body{
+    text-align: center;
+    background-color: palevioletred;
+}
+img{
+    width: 300px;
+    height: 250px;
+}
+button{
+    color: white;
+    background-color: lightgreen;
+}</style>
+        <script>function imageClicker(){
+    var images=[
+        "https://tse1.mm.bing.net/th/id/OIP.aVHfp4tbX9RoVkTvmAhXyQHaE8?rs=1&pid=ImgDetMain&o=7&rm=3",
+        "https://www.agrinews-pubs.com/resizer/d5prFwnuK6YcHfeqoHqV6Nap6C4=/1600x0/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/shawmedia/TRKWN4FGPFH4LIILWXV56JPTFM.jpg",
+        "https://tse4.mm.bing.net/th/id/OIP.wlOejfV4zhotrwVHLjFrbAHaE7?rs=1&pid=ImgDetMain&o=7&rm=",
+        "https://th.bing.com/th/id/R.f41449957c09873efac150002c0d82b9?rik=%2fatcdDS0%2fx%2fGEQ&pid=ImgRaw&r=0",
+        "https://th.bing.com/th/id/R.4ea4de07028d9efba8775e70ae7f4d0d?rik=PzkhfUPIFLzHxA&riu=http%3a%2f%2ftravel.home.sndimg.,com%2fcontent%2fdam%2fimages%2ftravel%2ffullrights%2f2017%2f9%2f6%2fCI_ChrisGardner_ToddyPondFarm_FarmStays.jpg.rend.hgtvcom.1280.960.suffix%2f1504714991871.jpeg&ehk=PEcRULRucqCxTqU8voCHtaa3hdOuVdDDl9%2ff5xnO7SY%3d&risl=&pid=ImgRaw&r=0",
+    ]
+    var randomIndex = Math.floor(Math.random()*images.length)
+    document.getElementById("image").src = images[randomIndex]
+}</script>
+      </html>
